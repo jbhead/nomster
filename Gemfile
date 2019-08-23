@@ -74,3 +74,7 @@ gem 'will_paginate-bootstrap'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'devise'
+
+## Adding Google Maps integration via geocoder
+gem 'geocoder'
+gem 'figaro'
