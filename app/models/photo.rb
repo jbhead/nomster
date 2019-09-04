@@ -1,6 +1,6 @@
 class Photo < ApplicationRecord
-  def create
   
-  end
-
+  belongs_to :user
+  belongs_to :place
+  
 end
