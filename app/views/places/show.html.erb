@@ -83,8 +83,7 @@
 
   <div class="row">
     <% @place.photos.each do |photo| %>
-      <div class="col-12 col-sm-6">
-
+      <div class="col-12 col-sm-6">        
         <blockquote>
           <% if photo.caption.present? %>
           <small><%= photo.caption %></small>
@@ -141,6 +140,7 @@
       </div>        
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
           <div class="modal-body">
+            <%= f.input :picture %>        
             <%= f.input :caption %>
           </div>
             <%= f.submit "Add a Photo", class: 'btn btn-primary' %> 

@@ -78,3 +78,6 @@ gem 'devise'
 ## Adding Google Maps integration via geocoder
 gem 'geocoder'
 gem 'figaro'
+
+## IMAGE UPLOADER
+gem 'carrierwave', '~> 2.0'
