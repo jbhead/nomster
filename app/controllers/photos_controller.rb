@@ -2,8 +2,8 @@ class PhotosController < ApplicationController
  ## before_action :authenticate_user!
 
   def create
-    @photo.place_id = params[:place_id]
-    @place.comments.create(photo_params)
+    @place = Place.find(params[:place_id])
+    @place.photos.create(photo_params)
     redirect_to place_path(@place)
     end
   end
