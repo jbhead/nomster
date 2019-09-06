@@ -84,7 +84,7 @@
   <div class="row">
     <% @place.photos.each do |photo| %>
       <div class="col-12 col-sm-6"> 
-      <%= image_tag photo.picture.url %>       
+      <%= image_tag photo.picture.url, class: 'img-fluid' %>       
         <blockquote>
           <% if photo.caption.present? %>
           <small><%= photo.caption %></small>
@@ -94,6 +94,8 @@
     <% end %>
   </div>
 
+
+
   <!-- Button trigger modal -->
 
 
@@ -101,6 +103,10 @@
     Add a photo
   </button>
 </div>
+
+<br />
+<br />
+<br />
 <!-- Modal comments-->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
