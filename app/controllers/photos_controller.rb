@@ -2,9 +2,9 @@ class PhotosController < ApplicationController
  ## before_action :authenticate_user!
 
   def create
-    @photo = Photo.new(photo_params)
     @photo.place_id = params[:place_id]
-    @photo.save!
+    @place.comments.create(photo_params)
+    redirect_to place_path(@place)
     end
   end
 
