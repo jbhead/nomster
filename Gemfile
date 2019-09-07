@@ -81,3 +81,4 @@ gem 'figaro'
 
 ## IMAGE UPLOADER
 gem 'carrierwave', '~> 2.0'
+gem 'fog-aws'

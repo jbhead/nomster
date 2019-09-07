@@ -23,6 +23,11 @@ module Nomster
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf )
 
+    # AWS KEYS 
+    AWS_ACCESS_KEY: "AKIAUUEPJYAY4S7S3R57"
+    AWS_SECRET_KEY: "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"
+    AWS_BUCKET: "josh-head-nomster"
+
 
   end
 end
