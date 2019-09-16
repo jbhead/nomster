@@ -8,6 +8,8 @@ class PhotosController < ApplicationController
     end
   end
 
+  def 
+
   private
 
   def photo_params
